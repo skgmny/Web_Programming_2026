@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- 웹사이트의 정보(제목, 성정 등)가 들어가는 곳-->
+        <title>웹사이트의 정보(제목, 성정 등)가 들어가는 곳. head를 잘써야 구글에 검색이 잘 된다고 한다.</title>
+        <meta charset="utf-8">
+        <meta name="author" content="문서의 제작자를 명시합니다.">
+        <meta name="description" content="웹페이지의 요약 설명을 적어두며, 검색엔진 검색 결과의 글 상자에 표시됩니다.">
+        <meta name="keyword" content="검색엔진이 수집할 해당 페이지의 주요 키워드를 지정합니다">
+    </head>
+    <body>
+        <!-- 실제로 화면에 보이는 내용들이 들어가는 곳-->
+        <header>위에는 head가 들어가는데, title, meta(charset, author, description, keyword)등의 있다.
+지금부터 body. 한 html에는 하나의 body만 가능하다고 한다.</header>
+        <article>
+            <section>
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+                <h6>h6</h6>
+                <p>본문 단락을 나누는 paraghrph p </p>
+                <p>다른 페이지로 연결하는 anchor a</p>
+                <a href="link.net"> 링크로 연결하기</a>
+                <a href="link2.net"target="_blank">새탭으로 연결하기</a>
+                <p>특정 글자만 쏙 짚어서 <span style="color: red;">꾸미는</span> span</p>
+                <p>br은 libe break로 줄바꿈(엔터)</p>
+                <p>hr은 horizontal line으로 가로 구분선을 그어주는 태그. 선이 그러지고 자동 줄바꿈까지!</p>
+                <blockquote><p>blockquote는 인용된 내용. 자동 들여쓰기가 된다</p></blockquote>
+            </section>
+            <section>
+        <hr> [글꼴]
+            <p><em>em은 emphasis로 기울림꼴</em></p>
+            <p><strong>strong은 strong emphasis로 굵게 표시</strong></p>
+            <p><mark>mark은 형광펜 하이라이트 표시</mark></p>
+            <p><small>small은 약간 작은 글씨로 표시. 덧붙이는 설명용</small></p>
+            <p>H<sub>2</sub>O -> sub은 subscript로 아래첨자를 표현. 화학식 등</p>
+            <p>x<sup>2</sup> -> sup은 superscript로 위첨자를 표현. 제곱이나 각주 등</p>
+            </section>
+            <section>
+        <hr> [목록 나열 List]
+            <p>웹페이지에서 순서가 있는 리스트, 순서가 없는 리트스, 그리고 용어를 설명하는 리스트 등 다양한 형식의 목록을 만드는 3가지 태그를 다룬다.</p>
+            <p>ul은 순서가 없는 목록 unordered list</p>
+            <p>각 항목 앞에 작은 불릿(기호)가 붙는다</p>
+                <ul>
+                    <li>목록의 각 항목은 반드시 li 즉 list item 태그로 감싼다</li>
+                </ul>
+            <p>ol은 순서가 있는 목록 ordered list</p>
+            <p>각 항목 앞에 숫자나 기호가 자동으로 부여된다.</p>
+            <ol>    
+            <li>목록의 각 항목은 반드시 li 즉 list item 태그로 감싼다</li>
+            <li>목록의 각 항목은 반드시 li 즉 list item 태그로 감싼다</li>
+            <li>목록의 각 항목은 반드시 li 즉 list item 태그로 감싼다</li>
+            </ol>
+            <p>dl은 용어를 설명하는 목록 description list/ definition list</p>
+            <p>사전처럼 용어와 그에 대한 설명을 짝지어 나열할 때 사용</p>
+            <p>dl은 설명 목록 전체 틀을 감싼다</p>
+            <dl>
+                <dt>dt는 description term으로 설명할 용어/단어를 적는다</dt>
+                <dd>dd는 description data로 해당 용어에 대한 헤설/설명을 적는다. 화면에서 자동으로 들여쓰기가 된다.</dd>
+                
+            </dl>
+            </section>
+        <hr> [표 만들기]
+            <section>
+            <p>1. table은 표 전체를 감싸는 틀/ 2. tr(table row)는 표의 행/ 3. td(table data)는 행 안에 들어가는 
+                일반 셀/ 4. th(table header)는 행또는 열의 제목 셀.글자가 굵어지고 가운데 정렬된다.</p>
+            <table border ="1">
+                <!--첫 번째 행: 제목 줄-->
+                <tr>
+                    <th>이름</th>
+                    <th>전공</th>
+                </tr>
+                <!--두 번째 행: 제목 줄-->
+                <tr>
+                    <td>홍길동</td>
+                    <td>AI 공학</td>
+                </tr>
+            </table>
+
+            <p>1. colspan="숫자"는 가로(열)을 합쳐. column span / 
+                2. rowspan="숫자"는 세로(행)을 합쳐. row span.</p>
+            <blockquote>이들은 td 뒤에 들어가면 된다.</blockquote>
+                <table border = "1">
+                <tr>
+                    <th rowspan="2">who</th> 
+                    <td>AI engineering student</td>
+                </tr>
+                <tr>
+                    <td>C, Java, Python</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">비고:2026 편입생</td>
+                </tr>
+            </table>
+            
+            <p>1. caption은 표의 맨 위에 중앙 정렬된 제목.table태그 직후 tr보다 앞에.</p>
+            <p>2. thead는 제목 행들을 묶는 구열. table head</p>
+            <p>3. tbody는 실제 데이터가 들어가는 몸통 구역 table body</p>
+            <p>4. tfoot은 맨 아래 합계, 평균, 비고 등을 붂는 구역</p>
+            <p>✔️(당장 눈에 보이는 결과는 같지만, 컴퓨터가 구조를 쉽게 이해하게 만들고 나중에 웹사이트를 고치거나 프린트할 때 편리하도록 구역을 나눠주는 것이다)</p>
+
+            <table border="1">
+                <caption>caption</caption>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>과목명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>필수</td>
+                        <td>C 프로그래밍</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">총 2개 과목 선택됨</td>
+                    </tr>
+                </tfoot>
+            </table>
+                
+            <p>colgroup이랑 col은 각 칸마다 작성할 필요 없이, 새로 중 전체의 너비나 배경색을 한번에 정할 때 활용된다</p>
+            <table>
+                <colgroup>
+                    <col style="width: 100px; background-color: #ccff00;">
+                    <col style="width: 200px; background-color: #00ff66;">
+                </colgroup>
+                <tr>
+                    <th>구분</th>
+                    <th>내용</th>
+                </tr>
+                <tr>
+                    <td>전공</td>
+                    <td>AI 전공</td>
+                </tr>
+            </table>
+        </section>
+    </article>
+
+        <footer><br><br>footer 페이지의 마지막</footer>
+
+    </body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head> ... </head>
+
+    <body>
+    <header> 페이지 최상잔이나 특정 영역의 '머리말'입니다. 로고, 검색창, 사이트 제목 등을 담습니다. </header>
+        <nav> navigation으로 다른 페이지나 카페고리로 이동하는 '주요 메뉴 링크 모음'에 사용합니다. </nav>
+        <article> 독자적으로 떼어내어 다른 곳에 붙여써도 완벽한 하나의 글로 성립하는 '독립적인 본문'. 예를 들어 뉴스 기사, 블로그 포스팅, 상품 상세 설명 등
+            <section> 하나의 큰 주제로 묶이는 '문잔/절'. 보통 이 내부에는 주제별로 구역을 나눌 때 사용합니다. 예를 들어 추천상품 section, 리뷰 section  </section>
+        </article>
+        <aside> 본문 옆에 붙는 사이드바 영역. 관련 광고, 사이드 메뉴, 관련 글 목록처럼 본문 흐름과 약간 떨어지는 부수 정보를 놓습니다.</aside>
+        <footer>페이지 최하단의 '꼬리말'입니다. 저작권 표시, 회사 주소, 이용약관 링크 등을 배치합니다.</footer>
+    </body>
+    주의사항: header나 aside를 적는다고 해서 글자다 자동으로 커지거나 오른쪽에 붙지 않는다. 오직 문서의 구조와 의미만 부여하며 화면에 배치하고 꾸미는 작업은 추후 CSS로 진행합니다.
+</html>-->
