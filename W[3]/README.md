@@ -1,3 +1,6 @@
+## Week 3
+홈페이지 업그레이드 시키기! 축제 때 코딩라운지에서 혼자 과제하기.. 야호✌️
+
 HOME ->
 <img width="1280" height="699" alt="image" src="https://github.com/user-attachments/assets/cc6bb591-30df-454c-a1f5-c0af9e87fde5" />
 
