@@ -2,7 +2,7 @@
 홈페이지 업그레이드 시키기! 축제 때 코딩라운지에서 혼자 과제하기.. 야호✌️
 
 HOME ->
-<img width="1244" height="734" alt="image" src="https://github.com/user-attachments/assets/6a826c34-2b30-47f3-bd91-b96158d33b3f" />
+<img width="1243" height="734" alt="image" src="https://github.com/user-attachments/assets/351e407f-e9e0-416f-a510-e8499d6aeb7d" />
 
 ABOUT ->
 <img width="1280" height="700" alt="image" src="https://github.com/user-attachments/assets/4315c320-b8bd-46bb-bfb2-4c3438f64e41" />
