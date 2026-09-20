@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--이건 기본 설정~-->
+<!--기본순서로는 html head body 인데 head 안에는 웹사이트의 정보가 들어가는 곳으로 눈에는 안보이지만 봇은 읽을 수 있는 정보가 들어가는것이다.
+title, meta가 주로 들어간다. meta는 charset="utf-8" , name="author"content"" , name="description"content"" , name="keyword"content"" 정도.
+이제 body 부터가 실제 화면에 보이는 것들이다. 한 html에는 하나의 body만 가능하다고 한다.
+구성으로는 크게 header, article, footer! 딱 3개인데 내용은 다 article안에 들어간다.
+article안에 section으로 나누어 내용을 분리한다.section으로 나누어야 깔끔하게 정리가 되는듯?
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta >
+<meta >
+</head>
+<body>
+<header></header>
+<article></article>
+<footer></footer>
+</body>
+</html> -->
+
+<!--<div style="width:500px; height:800px;"></div>-->
+
+
+<html>
+    <head>
+        <title>
+            웹사이트의 정보, 제목 상징. head를 잘써야 구글에 검색이 잘된다.
+        </title>
+        <meta charset = "utf-8">
+        <meta name = "author" content="최석인">
+        <meta name = "description" content ="웹프로그래밍 공부 중!">
+        <meta name ="keyword" content ="web programming">
+    </head> <!--여기까지가 head의 끝! 이제 body만 적으면 됨-->
+
+    <body>
+        <header>
+            <h2>header!</h2>
+        </header>
+        <article>
+            <section1>
+                <a href="link.com">href는 Hypertext REFerence의 준말이다~/</a>
+                <a href="link2.com" target="_blank">똑같이 a href 한 후에 target ="_blank"하면 새탭으로 연결~</a>
+                <p><span style="color: red;">span style="color: red;"</span></p>
+                <p> hr은 horizontal line</p>
+                <hr>
+            </section1>
+            <section2>
+                <p><em>emphasis 기울림꼴. </em></p>
+                <p><strong>strong 굵게 표시</strong></p>
+                <p><blockquote>blockquote 자동들여쓰기</blockquote></p>
+                <p><mark>mark 형광펜</mark></p>
+                <p><small>small 작게</small></p>
+                <p>sup<sup>위에</sup> sub<sub>아래</sub></p>
+            </section2>
+            <section3>
+                <hr>
+                <p>목록 ol은 ordered list, ul은 unordered list</p>
+                <ul>
+                    <li>각 항목은 li태그로 감싼다</li>
+                </ul>
+                <ol>
+                    <li>순서가 있는 목록</li>
+                </ol>
+            </section3>
+            <section3>
+                <hr>
+                <p>표</p>
+                <table border ="1">
+                    <tr>
+                        <td>hi</td>
+                        <td>hello</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1">
+                    <tr>
+                        <th rowspan="2">who</th>
+                        <td>AI</td>
+                    </tr>
+                    <tr>
+                        <td>C, Java, Python</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="background-color: #ccff00;">비고:2026 편입생</td>
+                    </tr>
+                </table>
+            </section3>
+
+
+
+
+
+        </article>
+    </body>
+</html>
